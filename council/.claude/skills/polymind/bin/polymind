@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Polymind shim — runs the Python polymind agent from the project venv
+exec /home/dak7sh/Desktop/project/council/polymind/.venv/bin/python -m polymind "$@"

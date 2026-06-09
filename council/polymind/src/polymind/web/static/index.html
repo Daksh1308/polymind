@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polymind</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">polymind</div>
+    <div class="status-bar" id="statusBar"></div>
+  </header>
+
+  <main id="chat">
+    <div class="welcome" id="welcome">
+      <h1>polymind</h1>
+      <p>Ask a question — get answers from all providers simultaneously</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="input-tools">
+      <label class="tool-btn" id="fileBtn" title="Attach code">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      </label>
+      <select id="roleSelect" class="tool-btn" title="Review role">
+        <option value="">General</option>
+        <option value="security">Security</option>
+        <option value="performance">Performance</option>
+        <option value="simplicity">Simplicity</option>
+        <option value="maintainability">Maintainability</option>
+      </select>
+      <div class="provider-toggles" id="providerToggles"></div>
+    </div>
+    <div class="input-row">
+      <textarea id="input" rows="1" placeholder="Ask anything..."></textarea>
+      <button id="sendBtn" disabled>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+  </footer>
+
+  <div id="fileModal" class="modal hidden">
+    <div class="modal-body">
+      <h3>Attach code</h3>
+      <textarea id="fileContent" rows="10" placeholder="Paste your code here..."></textarea>
+      <div class="modal-actions">
+        <button id="fileCancel">Cancel</button>
+        <button id="fileApply">Attach</button>
+      </div>
+    </div>
+  </div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

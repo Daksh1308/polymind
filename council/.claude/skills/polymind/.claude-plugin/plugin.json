@@ -1,0 +1,9 @@
+{
+  "name": "polymind",
+  "displayName": "Polymind",
+  "description": "Query multiple AI coding assistants (OpenAI, Gemini, Grok, Perplexity) at once and compare their answers side by side with agreement/safest-choice summaries.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Polymind"
+  }
+}
